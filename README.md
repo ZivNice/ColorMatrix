@@ -1,9 +1,7 @@
-<div align="right">
-  <a href="javascript:void(0)" onclick="switchLanguage('zh')" id="zh-link">中文</a> | 
-  <a href="javascript:void(0)" onclick="switchLanguage('en')" id="en-link">English</a>
-</div>
+# ColorMatrix
 
-<div id="zh-content" style="display: block;">
+<details>
+<summary>中文</summary>
 
 # ColorMatrix 微信小程序
 
@@ -137,16 +135,10 @@ miniprogram/
 
 项目维护者：[ZivNice](https://github.com/ZivNice)
 
----
+</details>
 
-
----
-
-*This README document is provided by the project developer, last updated on May 14, 2025*
-</div>
-
-<div id="en-content" style="display: none;">
-
+<details open>
+<summary>English</summary>
 
 # ColorMatrix WeChat Mini Program
 
@@ -279,30 +271,5 @@ Contributions of code or suggestions for improvement are welcome! Please follow 
 ## Contact
 
 Project Maintainer: [ZivNice](https://github.com/ZivNice)
-</div>
 
-<script>
-function switchLanguage(lang) {
-  if (lang === 'zh') {
-    document.getElementById('zh-content').style.display = 'block';
-    document.getElementById('en-content').style.display = 'none';
-    document.getElementById('zh-link').style.fontWeight = 'bold';
-    document.getElementById('en-link').style.fontWeight = 'normal';
-  } else {
-    document.getElementById('zh-content').style.display = 'none';
-    document.getElementById('en-content').style.display = 'block';
-    document.getElementById('zh-link').style.fontWeight = 'normal';
-    document.getElementById('en-link').style.fontWeight = 'bold';
-  }
-}
-
-// 根据浏览器语言自动选择默认语言
-(function() {
-  const userLang = navigator.language || navigator.userLanguage;
-  if (userLang.startsWith('zh')) {
-    switchLanguage('zh');
-  } else {
-    switchLanguage('en');
-  }
-})();
-</script>
+</details>
