@@ -1,0 +1,171 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.scan-area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+}
+
+.scan-border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+}
+
+/* 添加扫描框四角 */
+.corner {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007AFF;
+}
+
+.top-left {
+  top: -2px;
+  left: -2px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.top-right {
+  top: -2px;
+  right: -2px;
+  border-left: none;
+  border-bottom: none;
+}
+
+.bottom-left {
+  bottom: -2px;
+  left: -2px;
+  border-right: none;
+  border-top: none;
+}
+
+.bottom-right {
+  bottom: -2px;
+  right: -2px;
+  border-left: none;
+  border-top: none;
+}
+
+.controls {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background: #007AFF;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 24px;
+}
+
+button[disabled] {
+  background: #ccc;
+}
+
+.result-panel {
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.matrix-display {
+  margin-bottom: 15px;
+}
+
+.matrix-row {
+  display: flex;
+  justify-content: center;
+}
+
+.matrix-cell {
+  width: 40px;
+  height: 40px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* 颜色样式 */
+.color-1 { background: purple; }
+.color-2 { background: blue; }
+.color-3 { background: green; }
+.color-4 { background: yellow; color: #000; }
+.color-5 { background: orange; }
+.color-6 { background: red; }
+
+
+.camera {
+  width: 100vw;
+  height: 100vw; /* 保持正方形 */
+  position: relative;
+}
+
+.grid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* 确保不影响相机操作 */
+}
+
+.grid-line {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2rpx dashed rgba(255, 255, 255, 0.8);
+}
+
+.horizontal {
+  width: 100%;
+  height: 30rpx;
+}
+
+.vertical {
+  height: 100%;
+  width: 30rpx;
+}
+.controls {
+  position: fixed;
+  bottom: 140rpx;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 40rpx;
+}
+
+.control-btn {
+  min-width: 200rpx;
+  margin: 0 20rpx;
+  padding: 20rpx 40rpx;
+  border-radius: 40rpx;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.control-btn.import {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}

@@ -1,0 +1,46 @@
+/* app.wxss */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f6f6f6;
+}
+
+/* scan.wxss */
+.scan-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.camera {
+  width: 100%;
+  height: 80vh;
+}
+
+.scan-area {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #fff;
+}
+
+/* result.wxss */
+.matrix-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 15px;
+}
+
+.matrix-item {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

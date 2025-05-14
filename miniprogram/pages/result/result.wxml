@@ -1,0 +1,21 @@
+<!-- result.wxml -->
+<view class="result-container">
+  <view class="matrix-group">
+    <view class="matrix-item">
+      <text class="matrix-title">Matrix E</text>
+      <view class="matrix-content">
+        <!-- 显示矩阵E -->
+      </view>
+    </view>
+    <!-- 其他矩阵显示 -->
+  </view>
+
+  <view class="result-status {{isValid ? 'valid' : 'invalid'}}">
+    <text>验证结果：{{isValid ? '通过' : '未通过'}}</text>
+  </view>
+
+  <view class="actions">
+    <button bindtap="saveResult">保存结果</button>
+    <button bindtap="scanAgain">重新扫描</button>
+  </view>
+</view>

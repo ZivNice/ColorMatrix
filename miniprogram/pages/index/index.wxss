@@ -1,0 +1,84 @@
+/* index.wxss */
+.container {
+  min-height: 100vh;
+  padding: 40rpx;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60rpx;
+  padding: 40rpx 0;
+}
+
+.title {
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 20rpx;
+}
+
+.subtitle {
+  font-size: 28rpx;
+  color: #666;
+  display: block;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40rpx 0;
+}
+
+.btn {
+  width: 320rpx; /* 修改固定宽度 */
+  height: 96rpx;
+  border-radius: 48rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40rpx;
+  position: relative;
+  overflow: hidden;
+  /* 防止文字换行 */
+  white-space: nowrap;
+}
+
+.scan-btn {
+  background: #07c160;
+  box-shadow: 0 8rpx 16rpx rgba(7, 193, 96, 0.2);
+}
+
+.history-btn {
+  background: #ffffff;
+  color: #333333;
+  border: 2rpx solid #e5e5e5;
+  box-shadow: 0 8rpx 16rpx rgba(0, 0, 0, 0.05);
+}
+
+.btn-text {
+  font-size: 32rpx; /* 增大字体大小 */
+  font-weight: 500;
+  line-height: 1; /* 添加行高 */
+}
+
+.btn-hover {
+  transform: scale(0.98);
+  opacity: 0.9;
+}
+
+.footer {
+  text-align: center;
+  padding: 40rpx 0;
+}
+
+.tips {
+  font-size: 26rpx;
+  color: #999;
+}

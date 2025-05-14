@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="history-list">
+    <block wx:if="{{historyRecords.length > 0}}">
+      <view class="history-item" wx:for="{{historyRecords}}" wx:key="id">
+        <view class="history-time">{{item.timestamp}}</view>
+        <view class="matrix-display">
+          <view class="matrix-row" wx:for="{{item.matrix}}" wx:for-item="row" wx:key="index">
+            <view class="matrix-cell color-{{cell}}" wx:for="{{row}}" wx:for-item="cell" wx:key="index">
+              {{cell}}
+            </view>
+          </view>
+        </view>
+        <view class="history-actions">
+          <button size="mini" bindtap="deleteRecord" data-id="{{item.id}}">删除</button>
+        </view>
+      </view>
+    </block>
+    <view wx:else class="empty-history">
+      暂无历史记录
+    </view>
+  </view>
+</view>

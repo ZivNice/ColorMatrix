@@ -1,0 +1,26 @@
+<!-- index.wxml -->
+<view class="container">
+  <view class="header">
+    <text class="title">UV颜色矩阵扫描系统</text>
+    <text class="subtitle">快速扫描验证</text>
+  </view>
+  
+  <view class="content">
+    <button class="btn scan-btn" 
+            bindtap="goToScan" 
+            type="primary"
+            hover-class="btn-hover">
+      <text class="btn-text">开始扫描</text>
+    </button>
+    
+    <button class="btn history-btn" 
+            bindtap="goToHistory"
+            hover-class="btn-hover">
+      <text class="btn-text">历史记录</text>
+    </button>
+  </view>
+
+  <view class="footer">
+    <text class="tips">点击"开始扫描"进行验证</text>
+  </view>
+</view>

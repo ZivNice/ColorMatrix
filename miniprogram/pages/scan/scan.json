@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "cloud-tip-modal": "/components/cloudTipModal/index"
+  },
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "扫描",
+  "backgroundColor": "#000000"
+}
